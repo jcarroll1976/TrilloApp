@@ -13,6 +13,12 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: $breakpoint-extrasmall) {
+        order: 1;
+        flex: 0 0 100%;
+        background-color: var(--color-grey-light-2);
+    }
+
     &__input {
         font-family: inherit;
         font-size: inherit;
@@ -304,7 +310,7 @@
         text-transform: uppercase;
 
         @media only screen and (max-width:$breakpoint-small) {
-            font-size: 0.8rem;
+            font-size: 0.5rem;
         }
     }
 }
